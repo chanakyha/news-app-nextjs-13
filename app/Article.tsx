@@ -26,7 +26,7 @@ const Article = ({ article }: Props) => {
           </footer>
         </div>
 
-        <button>Read More</button>
+        {/* <button>Read More</button> */}
       </div>
     </article>
   );

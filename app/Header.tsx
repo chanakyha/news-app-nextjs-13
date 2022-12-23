@@ -3,6 +3,7 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
 import SearchBox from "./SearchBox";
+import DarkModeButton from "./DarkModeButton";
 
 const Header = () => {
   return (
@@ -18,8 +19,8 @@ const Header = () => {
             News
           </h1>
         </Link>
-        <div className="flex item-center justify-end space-x-2">
-          {/* dark mode button */}
+        <div className="flex items-center justify-end space-x-4">
+          <DarkModeButton />
           <button className="hidden md:inline rounded-full dark:bg-slate-800 bg-slate-900 text-white px-4 font-bold py-2 hover:scale-110 ease-out duration-200 active:scale-75">
             Subscribe Now
           </button>
