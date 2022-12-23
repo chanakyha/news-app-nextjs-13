@@ -2,6 +2,7 @@ import React from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
+import SearchBox from "./SearchBox";
 
 const Header = () => {
   return (
@@ -19,7 +20,7 @@ const Header = () => {
         </Link>
         <div className="flex item-center justify-end space-x-2">
           {/* dark mode button */}
-          <button className="hidden md:inline rounded-full dark:bg-slate-800 bg-slate-900 text-white px-4 font-bold py-2">
+          <button className="hidden md:inline rounded-full dark:bg-slate-800 bg-slate-900 text-white px-4 font-bold py-2 hover:scale-110 ease-out duration-200 active:scale-75">
             Subscribe Now
           </button>
         </div>
@@ -27,6 +28,7 @@ const Header = () => {
       {/* Nav links */}
       <NavLinks />
       {/* Search Box */}
+      <SearchBox />
     </header>
   );
 };
