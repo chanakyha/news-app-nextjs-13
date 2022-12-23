@@ -1,12 +1,15 @@
+import "../styles/globals.css";
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html>
-      <head />
+      <head>
+        <title>News App</title>
+      </head>
       <body>{children}</body>
     </html>
-  )
+  );
 }
