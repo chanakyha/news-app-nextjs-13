@@ -13,7 +13,7 @@ const Header = () => {
         <Link href="/" prefetch={false}>
           <h1 className="font-serif text-4xl flex-1 text-center">
             The{" "}
-            <span className="underline decoration-orange-400 decoration-6">
+            <span className="underline cursor-pointer decoration-orange-400 decoration-6">
               DevChan
             </span>{" "}
             News
