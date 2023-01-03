@@ -1,3 +1,4 @@
+import { categories } from "../../../constants";
 import fetchNews from "../../../lib/fetchNews";
 import NewsList from "../../NewsList";
 
@@ -16,3 +17,9 @@ const CategoryPage = async ({ params: { category } }: Props) => {
 };
 
 export default CategoryPage;
+
+export async function generateStaticParams() {
+  return categories.map((category) => ({
+    category: category,
+  }));
+}
